@@ -7,57 +7,57 @@
   </head>
   <body>
     <div class="container">
-      <div class="">
-        <!-- HEADER -->
-        <header>
-          <h1 class="margin-top-50">Create Your Burger</h1>
-        </header>
-        <!-- /HEADER -->
+      <!-- HEADER -->
+      <header>
+        <h1 class="margin-top-50">Create Your Burger</h1>
+      </header>
+      <!-- /HEADER -->
 
-        <!-- MAIN SECTION -->
-        <main>
-          <input type="text" value="" placeholder="Name Your Burger">
+      <!-- MAIN SECTION -->
+      <main>
+        <input type="text" id="hamburger-name" placeholder="Name Your Burger">
 
-          <h2>Ingredients</h2>
+        <h3>Ingredients</h3>
 
+        <div class="ingredients-container">
           <div class="first-column inline-block">
             <div class="">
-              <img src="" ><span>Cheese</span><input type="checkbox" value=""><span>add</span>
+              <img src="" ><span>Cheese</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="5"><span>add</span>
             </div>
             <div class="">
-              <img src="" ><span>Egg</span><input type="checkbox" value=""><span>add</span>
+              <img src="" ><span>Egg</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="8"><span>add</span>
             </div>
             <div class="">
-              <img src="" ><span>Mustard</span><input type="checkbox" value=""><span>add</span>
+              <img src="" ><span>Mustard</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="3"><span>add</span>
             </div>
           </div>
           <div class="second-column inline-block">
             <div class="">
-              <img src="" ><span>Tomato</span><input type="checkbox" value=""><span>add</span>
+              <img src="" ><span>Tomato</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="7"><span>add</span>
             </div>
             <div class="">
-              <img src="" ><span>Lettuce</span><input type="checkbox" value=""><span>add</span>
+              <img src="" ><span>Lettuce</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="2"><span>add</span>
             </div>
             <div class="">
-              <img src="" ><span>Ketchup</span><input type="checkbox" value=""><span>add</span>
+              <img src="" ><span>Ketchup</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="2"><span>add</span>
             </div>
           </div>
+        </div>
 
-          <div class="coupon">
-            <p class="inline-block">Discount Coupon</p><input type="text" value="" placeholder="12345ABCDEF">
-          </div>
+        <div class="coupon">
+          <p class="inline-block">Discount Coupon</p><input type="text" value="" placeholder="12345ABCDEF">
+        </div>
 
-          <button type="button" class="text-center">Calculate</button>
-        </main>
-        <!-- /MAIN SECTION -->
+        <button type="button" id="price-button" class="text-center">Calculate</button>
+      </main>
+      <!-- /MAIN SECTION -->
 
-        <!-- FOOTER -->
-        <footer>
-          <p class="inline-block">Your Price</p>
-          <span>$50</span>
-        </footer>
-        <!-- /FOOTER -->
-      </div>
+      <!-- FOOTER -->
+      <footer>
+        <p class="inline-block">Your Price</p>
+        <span id="total-price">$<span></span></span>
+      </footer>
+      <!-- /FOOTER -->
     </div>
     <script type="text/javascript" src="js/script.js">
 
