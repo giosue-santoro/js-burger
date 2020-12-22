@@ -16,43 +16,73 @@ body {
   height: 100vh;
 }
 
-.margin-top-50 {
-  margin-top: 50px;
-}
-
 .inline-block {
   display: inline-block;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .img-height {
   height: 55px;
   vertical-align: -1.2em;
 }
+
+.crimson {
+  color: #d33359;
+}
 /* COMMON */
 
 /* HEADER */
 header {
   background-color: #fdbb40;
+  position: relative;
 }
 
 header h1 {
   font-size: 40px;
+  padding: 30px;
+}
+
+.hamburger-img {
+  position: absolute;
+  left: 800px;
+  top: -30px;
 }
 /* /HEADER */
 
 /* MAIN */
 main {
   background-color: #fff;
+  padding: 30px;
+}
+
+main h2 {
+  padding: 20px 0;
+}
+
+.ingredients-container {
+  padding: 20px 0 40px 0;
+}
+
+.ingredients-container span {
+  padding: 0 10px;
+}
+
+.second-column {
+  padding-left: 200px;
+}
+
+.ingredient {
+  padding: 20px 0;
 }
 
 #hamburger-name {
   border: none;
   outline: none;
   font-size: 30px;
+  padding: 10px 0;
+}
+
+.coupon {
+  padding-bottom: 30px;
 }
 
 #discount {
@@ -90,5 +120,6 @@ footer {
 
 footer p, footer span {
   font-size: 30px;
+  padding: 30px;
 }
 /* /FOOTER */
