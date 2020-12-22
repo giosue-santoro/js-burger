@@ -47,7 +47,7 @@ document.getElementById('price-button').addEventListener('click', function () { 
 
       total = '$' + total; //Calcolo dello sconto
 
-      totalHtml.innerText = total; //Output in HTML
+      totalHtml.innerText = total.toFixed(2); //Output in HTML
     }
   }
 })
