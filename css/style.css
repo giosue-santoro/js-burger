@@ -3,10 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #fff5e2;
 }
 
 .container {
-  margin: 0 50px;
+  margin: 0 auto;
+  width: 50%;
+  height: 100vh;
 }
 
 .margin-top-50 {
@@ -20,16 +27,68 @@
 .text-center {
   text-align: center;
 }
+
+.img-height {
+  height: 55px;
+  vertical-align: -1.2em;
+}
 /* COMMON */
 
 /* HEADER */
+header {
+  background-color: #fdbb40;
+}
 
+header h1 {
+  font-size: 40px;
+}
 /* /HEADER */
 
 /* MAIN */
+main {
+  background-color: #fff;
+}
 
+#hamburger-name {
+  border: none;
+  outline: none;
+  font-size: 30px;
+}
+
+#discount {
+  background-color: #fff5e2;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 10px;
+  margin-left: 20px;
+  width: 500px;
+}
+
+#price-button {
+  background-color: #fdbb40;
+  padding: 25px;
+  border-radius: 20px;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
 /* /MAIN */
 
 /* FOOTER */
+footer {
+  background-color: #d33359;
+  color: #fff;
+}
 
+#total-price {
+  float: right;
+}
+
+footer p, footer span {
+  font-size: 30px;
+}
 /* /FOOTER */

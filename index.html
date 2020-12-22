@@ -3,61 +3,65 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <title></title>
   </head>
   <body>
     <div class="container">
-      <!-- HEADER -->
-      <header>
-        <h1 class="margin-top-50">Create Your Burger</h1>
-      </header>
-      <!-- /HEADER -->
+      <div class="inner-container">
+        <!-- HEADER -->
+        <header>
+          <h1 class="">Create Your Burger</h1>
+        </header>
+        <!-- /HEADER -->
 
-      <!-- MAIN SECTION -->
-      <main>
-        <input type="text" id="hamburger-name" placeholder="Name Your Burger">
+        <!-- MAIN SECTION -->
+        <main>
+          <input type="text" id="hamburger-name" placeholder="Name Your Burger">
 
-        <h3>Ingredients</h3>
+          <h2>Ingredients</h2>
 
-        <div class="ingredients-container">
-          <div class="first-column inline-block">
-            <div class="">
-              <img src="" ><span>Cheese</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="5"><span>add</span>
+          <div class="ingredients-container">
+            <div class="first-column inline-block">
+              <div class="">
+                <img src="img/cheese.svg" class="img-height"><span>Cheese</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="5"><span>add</span>
+              </div>
+              <div class="">
+                <img src="img/fried-egg.svg" class="img-height" ><span>Egg</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="8"><span>add</span>
+              </div>
+              <div class="">
+                <img src="img/mustard.svg" class="img-height" ><span>Mustard</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="3"><span>add</span>
+              </div>
             </div>
-            <div class="">
-              <img src="" ><span>Egg</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="8"><span>add</span>
-            </div>
-            <div class="">
-              <img src="" ><span>Mustard</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="3"><span>add</span>
+            <div class="second-column inline-block">
+              <div class="">
+                <img src="img/tomato.svg" class="img-height" ><span>Tomato</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="7"><span>add</span>
+              </div>
+              <div class="">
+                <img src="img/lettuce.svg" class="img-height" ><span>Lettuce</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="2"><span>add</span>
+              </div>
+              <div class="">
+                <img src="img/ketchup.svg" class="img-height" ><span>Ketchup</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="2"><span>add</span>
+              </div>
             </div>
           </div>
-          <div class="second-column inline-block">
-            <div class="">
-              <img src="" ><span>Tomato</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="7"><span>add</span>
-            </div>
-            <div class="">
-              <img src="" ><span>Lettuce</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="2"><span>add</span>
-            </div>
-            <div class="">
-              <img src="" ><span>Ketchup</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="2"><span>add</span>
-            </div>
+
+          <div class="coupon">
+            <p class="inline-block">Discount Coupon</p><input type="text" id="discount" placeholder="12345ABCDEF">
           </div>
-        </div>
 
-        <div class="coupon">
-          <p class="inline-block">Discount Coupon</p><input type="text" id="discount" placeholder="12345ABCDEF">
-        </div>
+          <button type="button" id="price-button" class="text-center">Calculate</button>
+        </main>
+        <!-- /MAIN SECTION -->
 
-        <button type="button" id="price-button" class="text-center">Calculate</button>
-      </main>
-      <!-- /MAIN SECTION -->
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="inline-block">Your Price</p>
-        <span id="total-price">$<span></span></span>
-      </footer>
-      <!-- /FOOTER -->
+        <!-- FOOTER -->
+        <footer>
+          <p class="inline-block">Your Price</p>
+          <span id="total-price">$<span></span></span>
+        </footer>
+        <!-- /FOOTER -->
+      </div>
     </div>
     <script type="text/javascript" src="js/script.js">
 
