@@ -1,7 +1,6 @@
 var cost = document.getElementsByClassName('ingredients-container')[0].getElementsByTagName('input');//variabile con checkbox
 var totalHtml = document.getElementById('total-price'); //variabile totale in HTML
 var discount = document.getElementById('discount'); //variabile sconto
-var discountPrice = 0; //variabile sconto
 var total = 0; //variabile costo totale
 
 document.getElementById('price-button').addEventListener('click', function () { //Funzione per calcolare prezzo quando clicco sul pulsante
@@ -39,15 +38,12 @@ document.getElementById('price-button').addEventListener('click', function () { 
     if (empty === false) {
       if (discount !== '') { //controllo che sia presente codice sconto
         if (discount.value === couponList[0,1,2]) {
-          discountPrice = 20;
           alert('Coupon accettato: sconto del 20% applicato');
-          total = total * 0.8;
+          total = total * 0.8; //calcolo sconto in caso di coupon
         }
       }
 
-      total = '$' + total; //Calcolo dello sconto
-
-      totalHtml.innerText = total.toFixed(2); //Output in HTML
+      totalHtml.innerText = '$' + total.toFixed(2); //Output in HTML
     }
   }
 })
