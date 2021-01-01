@@ -1,8 +1,10 @@
+//SELECTORS
 var cost = document.getElementsByClassName('ingredients-container')[0].getElementsByTagName('input');//variabile con checkbox
 var totalHtml = document.getElementById('total-price'); //variabile totale in HTML
 var discount = document.getElementById('discount'); //variabile sconto
 var total = 0; //variabile costo totale
 
+//FUNCTIONS
 document.getElementById('price-button').addEventListener('click', function () { //Funzione per calcolare prezzo quando clicco sul pulsante
 
   var empty = false; // variabile da utilizzare per i check di almeno due ingredienti e nome hamburger

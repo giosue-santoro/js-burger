@@ -99,12 +99,46 @@ main h2 {
 #price-button {
   background-color: #fdbb40;
   padding: 25px;
+  margin-left: 350px;
   border-radius: 20px;
   font-size: 20px;
   outline: none;
   cursor: pointer;
   border: none;
   font-weight: bold;
+}
+
+.ingredient input[type=checkbox] {
+  visibility: hidden;
+}
+
+.ingredient .checkbox span {
+  position: relative;
+}
+
+.ingredient .checkbox span:after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: 55%;
+  left: -10px;
+  transform: translateY(-55%);
+  width: 16px;
+  height: 16px;
+  background-color: #d33359;
+}
+
+.ingredient input[type=checkbox]:checked + span:before {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-55%);
+  z-index: 1;
+  content: "\f00c";
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+  font-family: "Font Awesome 5 Free";
 }
 /* /MAIN */
 

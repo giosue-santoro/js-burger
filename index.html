@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <title></title>
   </head>
@@ -21,28 +22,65 @@
         <input type="text" id="hamburger-name" placeholder="Name Your Burger">
 
         <h2>Ingredients</h2>
-
         <div class="ingredients-container">
           <div class="first-column inline-block">
             <div class="ingredient">
-              <img src="img/cheese.svg" class="img-height"><span>Cheese</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="5"><span class="crimson">add</span>
+              <img src="img/cheese.svg" class="img-height">
+              <label>Cheese
+                <div class="checkbox inline-block">
+                  <input type="checkbox" class="ingredient-checkbox" name="list[]" value="5">
+                  <span class="crimson">add</span>
+                </div>
+              </label>
+            </div>
+
+            <div class="ingredient">
+              <img src="img/fried-egg.svg" class="img-height">
+              <label>Egg
+                <div class="checkbox inline-block">
+                  <input type="checkbox" class="ingredient-checkbox" name="list[]" value="5">
+                  <span class="crimson">add</span>
+                </div>
+              </label>
             </div>
             <div class="ingredient">
-              <img src="img/fried-egg.svg" class="img-height" ><span>Egg</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="8"><span class="crimson">add</span>
-            </div>
-            <div class="ingredient">
-              <img src="img/mustard.svg" class="img-height" ><span>Mustard</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="3"><span class="crimson">add</span>
+              <img src="img/mustard.svg" class="img-height">
+              <label>Mustard
+                <div class="checkbox inline-block">
+                  <input type="checkbox" class="ingredient-checkbox" name="list[]" value="5">
+                  <span class="crimson">add</span>
+                </div>
+              </label>
             </div>
           </div>
+          
           <div class="second-column inline-block">
             <div class="ingredient">
-              <img src="img/tomato.svg" class="img-height" ><span>Tomato</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="7"><span class="crimson">add</span>
+              <img src="img/tomato.svg" class="img-height">
+              <label>Tomato
+                <div class="checkbox inline-block">
+                  <input type="checkbox" class="ingredient-checkbox" name="list[]" value="5">
+                  <span class="crimson">add</span>
+                </div>
+              </label>
             </div>
             <div class="ingredient">
-              <img src="img/lettuce.svg" class="img-height" ><span>Lettuce</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="2"><span class="crimson">add</span>
+              <img src="img/lettuce.svg" class="img-height">
+              <label>Lettuce
+                <div class="checkbox inline-block">
+                  <input type="checkbox" class="ingredient-checkbox" name="list[]" value="5">
+                  <span class="crimson">add</span>
+                </div>
+              </label>
             </div>
             <div class="ingredient">
-              <img src="img/ketchup.svg" class="img-height" ><span>Ketchup</span><input type="checkbox" class="ingredient-checkbox" name="list[]" value="2"><span class="crimson">add</span>
+              <img src="img/ketchup.svg" class="img-height">
+              <label>Ketchup
+                <div class="checkbox inline-block">
+                  <input type="checkbox" class="ingredient-checkbox" name="list[]" value="5">
+                  <span class="crimson">add</span>
+                </div>
+              </label>
             </div>
           </div>
         </div>
